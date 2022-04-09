@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+.postLayer {
+    position: relative;
+    top: 100px;
+}
+.navMob,.mobNavContainer{
+    background: #0c171bd1;
+}
+.mobNavLogo {
+    margin: 15px 0px 0 10px;
+}
+.mobNavList{
+    padding-top: 20px;
+}
+.sk_fb_events_load_more_btn_container,.sk-facebook-feed-bottom-follow-btn{
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+.sk_fb_events_load_more_btn_container~div,.sk-facebook-feed-bottom-follow-btn~div {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+}

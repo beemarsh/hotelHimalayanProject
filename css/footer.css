@@ -1,0 +1,101 @@
+*{
+    scroll-behavior: smooth;
+}
+.footer{
+    height: 350px;
+    width: 100vw;
+    background: black;
+    overflow: hidden;
+}
+.footContain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.copyTextSection {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+}
+.firstText {
+    height: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-family: 'Special Elite', cursive;
+    line-height: 3;
+}
+.lastText {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6em;
+    color: white;
+    line-height: 4;
+    font-family: 'Special Elite', cursive;
+}
+.copyContain {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.copyIconContain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.copyIconContain div {
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    transition: 0.3s linear;
+    cursor: pointer;
+}
+.copyIconContain div:hover ,.copyIconContain a:hover {
+    color: #775596;
+}
+.textCopy {
+    color: #b5acaccf;
+    margin-top: 20px;
+    font-family: 'Inria Sans', sans-serif;
+}
+.copyIconContain a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s linear;
+}
+span .emailMe{
+    bottom: 70px;
+    position: relative;
+}
+.emailThem{
+    right: 30%;
+    position: absolute;
+    margin-top: 45vh;
+}
+span.emailMe,.emailThem {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    text-indent: 40px;
+    font-size: 1.03em;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
+    display: none;
+}
+.emailMe span,.emailThem span {
+    border: 1px solid #292933f7;
+    padding: 10px;
+    background: #1d1623f2;
+    box-shadow: -4px 4px 10px #8430a530;
+}
+@media(max-width:1025px){
+    .emailThem{
+        margin-top: 30vh;
+        right: 0%;
+    }
+}

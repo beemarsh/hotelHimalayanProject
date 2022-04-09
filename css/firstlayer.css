@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text|Hind|Inconsolata|Noto+Sans+JP|PT+Sans|Titillium+Web|Varela+Round|Zilla+Slab&display=swap');
+.firstLayer{
+    height: 900px;
+    width: 100vw;
+    background: rgb(252, 252, 252);
+}
+.layer1Container{
+    height: 100%;width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background: white;
+}
+.lay1items{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.icoContainer {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #9686bda1;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7em;
+    color: #9686bda1;
+}
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+}
+.mainText {
+    border-bottom: 2px solid #988c8c;
+    border-radius: 5%;
+    font-size: 1.5em;
+    color: #79657be6;
+    font-family: 'Bellota Text', cursive;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: 600;
+}
+.subText {
+    font-size: 1.2em;
+    font-family: 'Titillium Web', sans-serif;
+    color: #a29fa9;
+}
+.Icons {
+    width: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media(min-width:1025px){
+    .firstLayer{
+        height: 600px;
+    }
+    .layer1Container{
+        display: grid;
+        grid-template-columns: repeat(2,30%);
+    }
+    .lay1items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .lay1items div {
+        margin-top: 5px;
+        text-align: center;
+    }
+}

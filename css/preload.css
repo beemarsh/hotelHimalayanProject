@@ -1,0 +1,22 @@
+.preLoader{
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 99;
+    flex-direction: column;
+    background: white;
+    background-size: cover;
+    width: 100vw;
+}
+.preLoader :nth-child(1){
+    max-height: 200px;
+    background-size: cover;
+    top: 100px;
+}
+.preLoader :nth-child(2){
+    max-height: 400px;
+    background-size: cover;
+}

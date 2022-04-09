@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Bellota+Text|Exo+2|Poppins|Source+Sans+Pro|Titillium+Web|Ubuntu|Work+Sans&display=swap');
+body{
+    overflow-x: hidden;
+}
+.slider{
+    height: 100vh;
+    width: 100vw;
+}
+.sliderContainer{
+    height: 100%;
+    width: 100%;
+}
+.slides{
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+.slides .imgContainer{
+    height: 100%;
+    width: 100%;
+}
+.textSlider{
+    position: absolute;
+    height: 70px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    top: 40%;
+    /* left: 40%; */
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 1;
+}
+.sliderDotsControl{
+    height: 50px;
+    width: 100vw;
+    position: relative;
+    bottom: 26vh;
+}
+.dotContainer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dotContainer div{
+    height: 5px;
+    width: 15px;
+    border-radius: 25%;
+    background:#9c9a9abf;
+    margin-left: 5px;
+    cursor: pointer;
+}
+.activeDot{
+    height: 5px !important;
+    width: 15px !important;
+    background:white !important;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+.sliderArrowControl{
+    height: 50px;
+    width: 100vw;
+    position: relative;
+    bottom: 50%;
+    font-size: 1.2em;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.sliderArrowControl i{
+    margin: 10px;
+    cursor: pointer;
+}
+.sliderPauseControl{
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 30%;
+    color: white;
+    font-size: 1.3em;
+}
+.sliderPauseControl div{
+    height: 100%;
+    width: 70px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

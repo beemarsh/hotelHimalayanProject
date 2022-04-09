@@ -1,0 +1,106 @@
+.secondLayer{
+    height: 540px;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.88);
+    overflow-x: hidden;
+    overflow: hidden;
+}
+.lay2Container{
+    height: 100%;
+    width: 100%;
+}
+.lay2Slides{
+    height: 100%;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+.textSection {
+    max-height: 50%;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.roomname {
+    font-size: 1.8em;
+    border-bottom: 2px solid #9a9c8d;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #c1bfbae3;
+    font-family: 'Zilla Slab', serif;
+    margin-top: 25px;
+}
+.roomDetail {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    line-height: 1.4;
+    color: #babdbde0;
+    font-family: 'Hind', sans-serif;
+}
+.roomReserve {
+    font-size: 1.1em;
+    color: #b9b0b0;
+    border: 1.3px solid white;
+    border-radius: 2%;
+    padding: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-indent: 5px;
+    box-shadow: 2px 0.1px 3px #00f3ffab;
+    letter-spacing: 1px;
+}
+.picSection {
+    max-height: 50%;
+    overflow: hidden;
+    width: 100%;
+}
+.picSection img {
+    max-height: 100%;
+}
+.lay2ControlBar{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nextprev {
+    margin-left: 10px;
+    font-size: 1.9em;
+    margin-top: 10px;
+    color: #c1c7c5f5;
+    z-index: 2;
+}
+.nums {
+    margin-right: 20px;
+    font-size: 1.2em;
+    font-family: 'Varela Round', sans-serif;
+    color: #bcc9cad9;
+}
+@media(min-width:900px){
+    .lay2Slides{
+        flex-direction: row;
+    }
+    .picSection{
+        max-height: 100%;
+        margin-top: 5%;
+        margin-right: 1%;
+        overflow-x: hidden;
+    }
+    .picSection img{
+        max-width: 99%;
+    }
+    .secondLayer{
+        margin-top: 30px;
+    }
+    .sliderArrowControl :nth-child(1){
+        margin-left: 40px;
+    }
+    .sliderArrowControl :nth-child(2){
+        margin-right: 40px;
+    }
+}

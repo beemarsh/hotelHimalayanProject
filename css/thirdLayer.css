@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+Chettan+2|Bellota|Bellota+Text|Inria+Sans|Maven+Pro|PT+Sans|Source+Sans+Pro|Special+Elite|Ubuntu&display=swap');
+.thirdLayer{
+    height: 500px;
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+.layer3Container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.lay3Text {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.lay3MainText {
+    height: 50px;
+    width: 100%;
+    font-size: 3em;
+    font-variant: small-caps;
+    text-indent: 20px;
+    font-family: 'Bellota', cursive;
+    color: #675c7dc7;
+    text-align: center;
+    font-weight: 700;
+}
+.lay3SubText {
+    text-indent: -12px;
+    font-size: 1.3em;
+    height: 50px;
+    width: 100%;
+    color: #603e80e0;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 2;
+    text-align: center;
+}
+.lay3SubText span{
+    border-bottom: 1.5px solid;
+}
+.lay3ImgContainer {
+    max-height: 70%;
+    width: 100%;
+}
+.lay3ImgContainer img {
+    width: 100%;transform: scale(0.9);
+}
+.playButton {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background: #ecececf2;
+    border-radius: 100%;
+    left: 37%;
+    margin-top: 20%;
+    box-shadow: -5px 8px 40px 10px #6452b9b5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+    color: #7055b3;
+    z-index: 2;
+    cursor: pointer;
+    transition: 0.4s linear !important;
+}
+.playButton:hover{
+    background: #252525e6;
+    color: #9489ab;
+}
+.youtubeWrapper{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    background: #000000d1;
+    z-index: 10;
+    display: none;
+}
+.youtubeWrapper iframe {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    height: 50%;
+}
+.closeContain {
+    height: 50px;
+    width: 100%;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: flex-end;
+    top: 20px;
+    position: relative;
+}
+.closeContain i {
+    margin-right: 20px;
+    cursor: pointer;
+}
+@media(min-width:550px){
+    .playButton{
+        margin-top: 20%;
+        left: 42%;
+    }
+}
+@media(min-width:780px){
+    .playButton{
+        margin-top: 20%;
+        left: 45%;
+    }
+}
+@media(min-width:1050px){
+    .playButton{
+        margin-top: 15%;
+    }
+}
+@media(min-width:1380px){
+    .playButton{
+        margin-top: 12%;
+    }
+    .closeContain i{
+        margin-right:100px
+    }
+}
+@media(min-width:1550px){
+    .playButton{
+        margin-top: 10%;
+    }
+}
